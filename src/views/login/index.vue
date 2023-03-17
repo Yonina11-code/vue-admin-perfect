@@ -7,7 +7,7 @@
       </div>
       <div class="login-form">
         <div class="info-qrcode">{{ accountLogin ? '扫码登录' : '账号登录' }}</div>
-        <img src="@/assets/image/login/qrcode-icon.png" class="qrcode" @click="handleClick">
+        <img src="@/assets/image/login/qrcode-icon.png" class="qrcode" @click="handleClick" />
 
         <LoginForm v-if="accountLogin" />
         <LoginQrcode v-else />
